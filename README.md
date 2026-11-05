@@ -7,7 +7,7 @@ O projeto utiliza o MediaPipe Tasks API para rastreamento biométrico de alta pr
 ## Autores e Responsáveis
 
 * Eduardo Cardoso Oliveira
-* Victor
+* Victor Hugo Andrade
 
 ## Funcionalidades
 
