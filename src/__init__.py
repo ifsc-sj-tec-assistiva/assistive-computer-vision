@@ -1,4 +1,7 @@
 from .face.detector_rosto import DetectorRosto
-from .hands.detector_maos import DetectorMaos
 
-__all__ = ["DetectorRosto", "DetectorMaos"]
+try:
+    from .hand.detector_maos import DetectorMaos
+    __all__ = ["DetectorRosto", "DetectorMaos"]
+except ImportError:
+    __all__ = ["DetectorRosto"]
