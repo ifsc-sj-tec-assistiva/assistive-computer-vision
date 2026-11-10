@@ -12,10 +12,18 @@ O projeto utiliza o MediaPipe Tasks API para rastreamento biométrico de alta pr
 ## Funcionalidades
 
 * Controlo do Mouse por Rastreamento Facial (detector_rosto.py):
-  * Mapeamento de 478 pontos de referência (landmarks) faciais.
-  * Movimentação contínua do cursor mapeada pela posição da ponta do nariz.
-  * Disparo de cliques com o botão esquerdo através da detecção de piscada do olho esquerdo.
-  * Renderização otimizada da estrutura facial (contorno do rosto, olhos, sobrancelhas e lábios).
+  * Mapeamento contínuo em tempo real com MediaPipe Tasks e baixa latência.
+  * Movimentação suave e ergonômica com filtro EMA (anti-tremor) e sensibilidade ajustável.
+  * **Calibração de Centro (Tecla C):** Adapta a posição de repouso confortável do usuário ao centro da tela.
+  * **Dwell Click (Tecla D):** Clique automático por permanência com anel de carregamento visual ao redor da mira.
+  * **Ações por Blendshapes Faciais:**
+    * Piscada esquerda: Clique com o botão esquerdo.
+    * Piscada direita: Clique com o botão direito.
+    * Boca aberta: Modo Rolagem suave de páginas (Scroll).
+    * Sobrancelhas levantadas (ou Tecla P): Pausa / Retoma o rastreamento.
+  * **Arrastar e Soltar (Tecla A):** Permite mover janelas e selecionar textos.
+  * **Teclado Virtual (Tecla T):** Aciona o teclado em tela nativo do Windows.
+  * **Feedback Sonoro Sutil:** Bipes discretos em segundo plano para confirmação de ações.
 
 * Controle por Gestos Manuais (detector_maos.py):
   * Rastreamento e reconhecimento das articulações da mão em tempo real para comandos complementares.
